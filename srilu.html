@@ -1,14 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <!-- 'ctrl+/' will shortcut for comment -->
+    <!-- 'ctrl+/' will shortcut for comment -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content = "ie=edge"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- meta tag means data about data -->
+    <!-- it helps in SEO of data in online websites in internet -->
+    <meta name="description" content="this is description">
+    <meta name="keywords" content="html,html tutorials">
+    <!-- robots is used  to index and follow people in internet -->
+    <meta name="robots" content="UNINDEX , UNFOLLOW">
     <title>srilu Document</title>
+    <!-- link is used to link  external css fiels
+    and script is used to link extenal js files -->
+    <link rel="stylesheet" href="srilu.css">
+    <script src="srilu.js"></script>
 </head>
 <!--example page of html-->
+
 <body>
-    Hello 
+    <!-- title of the document should be one for SEO otherwise it well misbehave. -->
+    <!-- We can have differnt subtitles tags like h2..h6 of the document -->
+    <h1>Hello World!</h1>
+    <!-- 'toggle word wrap' is used to warp words in paragraph or in a line has requried and for this go 'command pallate' the 'toogle word warp'. -->
+    <!-- we can also take as many words in a 'paragraph of Dummy Text' writting number of words of it example 'lorem4' then it will show '4 words' of the 'pragraph of Dummy Text' like 'Lorem ipsum dolor sit'. -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis odio deserunt laborum perferendis autem eius
+        non quis adipisci alias at reprehenderit, nihil cumque magni cum. Sed dolore animi ratione natus!</p>
+    <!-- we use 'p*4' by using 'Emmet' we get '4 paragraph  tags' at a time this is Emmet power.  -->
+    <p>first</p>
+    <!-- To 'Jump' into  'New line' using 'keyboard' is  'ctrl '+ 'enter'  -->
+    <p>second</p>
+    <p>third</p>
+    <p>four</p>
+    <!-- achor tag and image tag -->
+    <!-- for make multiple changes at a time 'hold Alt key' and 'click on mouse pointer where you make changes at a time' -->
+    <a href="www.google.com" target="_blank">google </a>
+    <a href="/srilu.html" target="_blank">html page</a>
+    <img src="demo project/drag & drop js project/image/photo0129.jpg" alt ="it used when image is not loading this is the use of attribute">
+    <img src="https://source.unsplash.com/collection/190727/1600x900" target = "_blank" alt = "remote image">
+ <h3> Forms tutorial</h3>
+<!-- action attribute is used to connect with 'backend language' and data base like node.js ,php,python and also with their 'databases' like mysql,mongodb,jango to 'store data in their databases respectively'. -->
+    <form action="backend.php">
+     <label for="name">Name:</label> <!--id and for attribute must be same for lable tag -->
+        <div>
+     <input type ="text" name = "MyName" id = "name">
+        <!--input tag is a inline element & div is a block element so input tag automatically comes to next line without <br> tag -->
+    </div>
+<br>
+    <div>
+        <!-- this 'name' and 'id' 'attribute' will help backned db to store data in that particular place assigned to it in db -->
+        Role: <input type = "text" name = "MyRole">
+    </div>
+    <br>
+    <div>
+        Email: <input type = "email" name = "MyEmail"  >
+    </div>
+<br>
+<br>
+<div>
+    Date:<input type="date" name="myDate" >
+</div>
+<br>
+<div>
+    Bonus: <input type="number" name="MyNumber">
+</div>
+<br>
+<div>
+    <!-- if used checkbox in type attribute and if we type checked it will be checked for ever in form  -->
+    Are you Eligible? <input type="checkbox" name=" MyCheckbox" >
+</div>
+<br>
+<div>
+    <!-- if you use one attribute name for same type of input tag one will checked only -->
+   Gender: Male <input type="radio" name ="myGender"> Female  <input type="radio" name="myGender" > Other <input type="radio" name ="myGender" >
+</div>
+<br>
+<div>
+    <!-- textarea is used to write description about custome or feedback by customer it can be expanded or compressed accordingly col & rows can be increased or decreased-->
+    Write about yourself:<br>
+    <textarea name="MyTextarea"  cols="30" rows="10"></textarea>
+</div>
+<br>
+<div>
+    <!-- selected on which you need to select -->
+    <lable for ="car"> Car </lable>
+    <select name="MyCar" id="car">
+        <option value="indica" > indica</option>
+        <option value="swift"> swift</option>
+        <option value="Honda">Honda</option>
+        <option value="Hero">Hero</option>
+    </select>
+</div>
+<!-- anchor tag is a inline element  -->
+<!-- p tag is a block element -->
+<br>
+<div>
+    <input type="submit" value="Submit now">
+    <input type="reset" value="Reset now"> 
+</div>
+</form>
+Entites <!-- Entites are symbols like <,>,$, , and this symbols will appear only in paragraph when we use these entites like &nbsp;,&lt;,&gt; and symbols which are not their in the keybord like &copy;,&pound;... -->
+ Semantic tags <!-- 'Semantic tag' means it tells how website should look like in online by this website is given ranks. webpage should have header,navbar, section , article, aside,footer. It is mostly used in blogging website. -->
+ Details tag <!--This tag will description of paragraph when we click on the arrow button -->
+<details>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, nostrum! Quia aspernatur vitae laudantium! Voluptas quibusdam quam, nihil dicta laudantium, doloribus explicabo quia nisi odit quasi eaque est autem beatae provident assumenda labore reprehenderit necessitatibus? Cum vel hic dolor enim.
+</details>
+Summary tag <!--This tag is used to show the content fully which is in between summary tags-->
+<summary>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quaerat accusamus minus tempore dolorum veritatis adipisci voluptatum sequi quae molestiae, deleniti veniam dolorem odio inventore animi sint magni fugiat totam maiores facere porro beatae. Tempore necessitatibus sint harum nemo voluptatem?
+</summary>
 </body>
 </html>
