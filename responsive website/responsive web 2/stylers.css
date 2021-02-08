@@ -1,0 +1,200 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    /*font: 15px/1.5 Arial,Helvetica,sans-serif; font can also be written like this*/
+ background-color:#fff;
+padding: 0;
+margin:0;
+}
+/* global*/
+.container{
+    width: 80%;
+    margin: auto;/*set everthing middle or center then set margin to auto*/
+    overflow: hidden;
+    box-sizing:border-box;
+}
+/* By  doing this all ul have no margin and padding globally */
+/*Because ul default have padding and margin*/
+ul{
+    margin:0;
+    padding:0;
+}
+/*button-1 is used has global so we written here*/
+.button-1{
+    height: 38px;
+    background: #e8491d;
+    border:0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#ffffff;
+}
+
+.drak{
+    padding:15px;
+    background: #35424a;
+    color:#fff;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+/*header*/
+header{
+    background-color: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #84491d 3px solid;
+}
+header a{
+    color:#fff;
+    text-decoration:none;/*links have a underline by default*/
+ text-transform: uppercase;
+ font-size:16px;
+}
+/* now we what move menu and text horizontally and also remove the bullets*/
+/* by default ul have margin and padding we must make sure to remove padding*/
+header li{
+    float:left;
+    display: inline;
+    padding:0 20px 0 20px;
+}
+header #branding{
+    float:left;
+}
+header #branding h1{
+    margin:0;
+}
+header nav{
+    float:right;
+    margin-top:10px;/*we want to move nav some done*/
+}
+/*actually i wanted use 'Active or hover state' to 'li tag' not 'a tag' it done by using .current class for 'active'  
+'button' (or) 'hover state'. */
+header .highlight, header .current a{
+    color:#e8491d;
+    font-weight: bold;
+}
+    header a:hover{
+    color: #cccccc;
+    font-weight:bold;
+}
+
+/*Showcase*/
+#showcase{
+   min-height:400px;
+   background:url('./images/typing.jpg') no-repeat -200px -800px;
+    /*0 and -400px are x&y coordinates to move up horizontally image we use negative value in y axis*/ ;
+   text-align: center;
+   color:#fff;
+}
+#showcase h1{
+    margin-top:120px;
+    margin-bottom:10px;
+    font-size:45px;
+}
+#showcase p{
+    margin-top: 50px;
+    line-height: 1.5em;
+font-size: 20px;
+}
+/*newsletter*/
+#newsletter{
+    padding:15px;
+    background:#35424a;
+    color:#ffffff;
+
+}
+#newsletter h1{
+    float:left;
+}
+#newsletter form{
+    float:right;
+    margin-top: 15px;
+}
+#newsletter input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:250px;
+}
+/*boxes*/
+#boxes{
+    margin-top:20px;
+}
+#boxes .box{
+    float:left;
+    width:30%;
+    padding:10px;
+    text-align: center;
+}
+#boxes .box img{
+    width: 90px;
+}
+/*sidebar*/
+aside#sidebar{
+    float:right;
+    width:30%;
+    margin-top:10px;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+
+aside#sidebar .quote input,aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;  
+}
+/*main-col*/
+article#main-col{
+    float:left;
+    width:65%;
+    overflow:hidden;
+}
+ul#services li{
+    list-style: none;
+    padding:20px;
+    border:grey solid 1px;
+    margin-bottom:5px;
+    background:lightgrey;
+}
+
+footer{
+    padding: 20px;
+    margin-top:20px;
+    color:#fff;
+    background: #e8491d;
+    text-align: center;
+}
+
+/*Media queries*/
+@media(max-width:768px){
+    header#branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width:100%;
+    }
+    header{
+        padding:20px;
+    }
+    #showcase h1{
+        margin-top:40px;
+    }
+  #newsletter button, .quote button{
+      display:block;
+      width:100%;
+  }
+  #newsletter form input[type="email"], .quote input,.quote textarea{
+   width:100%;
+   margin-bottom:5px;
+  }
+}
+
+
+
+
+
+
